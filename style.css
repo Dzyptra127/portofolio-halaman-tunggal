@@ -1,0 +1,133 @@
+/* === Syarat 1: .profile_name — warna teks & ukuran font === */
+.profile_name {
+    background: linear-gradient(135deg, #1a237a, #2835b4);
+    color: #ffffff; /* Warna teks terang */
+    font-size: 1.5rem; /* Ukuran font sesuai */
+    font-weight: 700;
+    padding: 1.2rem 5%;
+}
+
+/* === Syarat 2: .topmenu:hover — efek tebal & garis bawah === */
+.topmenu a:hover {
+    font-weight: bold; /* Teks menebal saat disentuh */
+    text-decoration: underline; /* Garis bawah saat dihover */
+    color: #ffd54f;
+}
+
+/* === Bagian umum === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7fc;
+    padding: 0 5%;
+}
+
+/* Navigasi */
+.topmenu {
+    background: #2835b4;
+    padding: 0.8rem 5%;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.topmenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Beranda */
+.iconbutton {
+    display: inline-block;
+    background: #2835b4;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.iconbutton:hover {
+    background: #1a237a;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Bagian konten */
+section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #1a237a;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Tentang Saya */
+.about p {
+    font-size: 1.05rem;
+    max-width: 800px;
+}
+
+/* Keterampilan */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.skill {
+    padding: 1.2rem;
+    border-radius: 8px;
+}
+
+.skill:nth-child(1) { background: #fff3cd; border-left: 4px solid #ffc107; }
+.skill:nth-child(2) { background: #e2d5f8; border-left: 4px solid #6f42c1; }
+.skill:nth-child(3) { background: #d4edda; border-left: 4px solid #28a745; }
+.skill:nth-child(4) { background: #cce5ff; border-left: 4px solid #007bff; }
+
+/* Proyek */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 1.2rem;
+    border-left: 4px solid #1a237a;
+    background: #f4f7fc;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Rekomendasi */
+.recommendations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recommendation {
+    padding: 1.2rem;
+    border-left: 4px solid #ffc107;
+    background: #fff9e6;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
